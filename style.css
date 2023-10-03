@@ -1,0 +1,58 @@
+body {
+  background: rgb(43, 135, 209);
+
+}
+.boxes {
+  height: 120px;
+  width: 120px;
+  background-color: #2772bd; /* border : 2px solid red; */
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: none;
+}
+/* @keyframes example {
+    from {background-color: blue;}
+    to {background-color: white;}
+  } */
+.container {
+  display: flex;
+  height: 402px;
+  width: 402px;
+  margin: auto;
+  position: relative;
+  flex-wrap: wrap;
+  top: 15vh;
+}
+
+.fade {
+  opacity: 0;
+  background-color: white;
+
+  animation: fade 0.5s ease-out;
+}
+
+.blink{
+    opacity: 0;
+    background-color: red;
+    animation: fade 0.1s ease-out;
+
+}
+@keyframes fade{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
